@@ -2,7 +2,12 @@
   <script>
     let path = window.location.pathname;
     function redirect() {
-      window.location.href = `https://www.anosh-anosh.github.io/${path}`;
+      if (path == "") {
+        window.location.href = `https://www.anosh-anosh.github.io/`;
+      }
+      else {
+        window.location.href = `https://www.anosh-anosh.github.io/${path}`;
+      }
     }
     redirect();
 
